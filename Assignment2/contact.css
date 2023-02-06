@@ -11,3 +11,12 @@
     color: black;
     padding: 20px;
 }
+
+@media screen and (max-width: 1000px) {
+    .backgrnd {
+        width: 90%;
+    }
+    .formdet {
+        font-size: 16px;
+    }
+}
