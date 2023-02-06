@@ -12,7 +12,7 @@ p {
 
 @media screen and (max-width: 1000px) {
     p {
-        font-size: 20px;
+        font-size: 16px;
         margin: 30px;
     }
     .homeimage {
