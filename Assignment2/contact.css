@@ -1,0 +1,13 @@
+.backgrnd {
+    margin: auto;
+    width: 50%;
+    background-color: rgba(256, 256, 256, 0.6);
+
+}
+
+.formdet {
+    display: flex;
+    flex-direction: column;
+    color: black;
+    padding: 20px;
+}

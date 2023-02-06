@@ -1,0 +1,16 @@
+.dimage {
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0 20px;
+}
+
+.attrbt {
+    float: none;
+    padding-left: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}

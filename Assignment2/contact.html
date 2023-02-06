@@ -1,0 +1,77 @@
+<html>
+<head>
+    <link rel="stylesheet" href="contact.css">
+    <title>Porwal Textiles</title>
+    <style>
+        body {
+            background: url("backdrop.webp");
+            color: white;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            padding: 0 20px;
+        }
+        li {
+            float: right;
+        }
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            font-size: 20px;
+            padding: 10px 14px;
+            margin: 0 5px;
+            text-decoration: none;
+            border-radius: 10px;
+        }
+        li a:hover {
+            background-color: white;
+            transition: all 0.2s ease-in;
+            color: black;
+            border-radius: 10px;
+        }
+        #active {
+            display: block;
+            color: black;
+            background-color: white;
+            text-align: center;
+            font-size: 20px;
+            padding: 10px 14px;
+            text-decoration: none;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a id='active' href="contact.html">Contact Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="home.html">Home</a></li>
+        <li style="float:left"><a href="home.html">PP</a></li>
+    </ul>
+    <div class="backgrnd">
+        <form class="formdet">
+            <div style="display: flex; margin: 10px;">
+                <label for="fname" style="padding: 5px;">First Name</label>
+                <input type="text" style="padding: 5px;" id="fname" name="name" placeholder="Name">
+            </div>
+            
+            <div style="display: flex; margin: 10px;">
+                <label for="email" style="padding: 5px;">Email</label>
+                <input type="text" style="padding: 5px;" id="email" name="email" placeholder="Email">
+            </div>
+            
+            <div style="display: flex; margin: 10px;">
+                <label for="subject" style="padding: 5px;">Subject</label>
+                <textarea id="subject" style="padding: 5px;" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            </div>    
+            <input type="submit" value="Submit">
+          </form>
+    </div>
+</body>
+</html>
