@@ -5,10 +5,10 @@ p {
 }
 
 .homeimage {
+    display: flex; 
     align-items: center;
     justify-content: center;
     margin: auto;
-    display: flex; 
     padding: 10px;
 }
 
