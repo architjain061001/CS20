@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href = "songs.css" ?>
+<songlist>
+  <song>
+    <title>What You Know Bout Love</title>
+    <artists>
+        <artist>Pop Smoke</artist>
+    </artists>
+    <genres>
+        <genre>Rhythm and blues</genre>
+    </genres>
+    <year>2020</year>
+  </song>
+  <song>
+    <title>YOSEMITE</title>
+    <artists>
+        <artist>Travis Scott</artist>
+        <artist>NAV</artist>
+        <artist>Gunna</artist>
+    </artists>
+    <genres>
+        <genre>Hip-Hop/Rap</genre>
+    </genres>
+    <year>2018</year>
+  </song>
+  <song>
+    <title>Often</title>
+    <artists>
+        <artist>The Weeknd</artist>
+    </artists>
+    <genres>
+        <genre>R&amp;B/Soul</genre>
+    </genres>
+    <year>2015</year>
+  </song>
+  <song>
+    <title>SAD!</title>
+    <artists>
+        <artist>XXXTentacion</artist>
+    </artists>
+    <genres>
+        <genre>Emo rap</genre>
+        <genre>Alternative R&amp;B</genre>
+        <genre>Pop</genre>
+    </genres>
+    <year>2018</year>
+  </song>
+  <song>
+    <title>No Guidance</title>
+    <artists>
+        <artist>Chris Brown</artist>
+        <artist>Drake</artist>
+    </artists>
+    <genres>
+        <genre>R&amp;B/Soul</genre>
+    </genres>
+    <year>2019</year>
+  </song>
+  <song>
+    <title>Rockstar</title>
+    <artists>
+        <artist>Post Malone</artist>
+    </artists>
+    <genres>
+        <genre>Trap music</genre>
+        <genre>Cloud rap</genre>
+        <genre>Hip-Hop/Rap</genre>
+    </genres>
+    <year>2018</year>
+  </song>
+  <song>
+    <title>Hymn for the Weekend</title>
+    <artists>
+        <artist>Coldplay</artist>
+    </artists>
+    <genres>
+        <genre>Alternative/Indie</genre>
+    </genres>
+    <year>2015</year>
+  </song>
+  <song>
+    <title>Life’s a Mess</title>
+    <artists>
+        <artist>Juice WRLD</artist>
+        <artist>Halsey</artist>
+    </artists>
+    <genres>
+        <genre>Alternative/Indie</genre>
+        <genre>Hip-Hop/Rap</genre>
+    </genres>
+    <year>2020</year>
+  </song>
+  <song>
+    <title>Ransom</title>
+    <artists>
+        <artist>Juice WRLD</artist>
+        <artist>Lil Tecca</artist>
+    </artists>
+    <genres>
+        <genre>Hip-Hop/Rap</genre>
+    </genres>
+    <year>2019</year>
+  </song>
+  <song>
+    <title>Love Me Again</title>
+    <artists>
+        <artist>John Newman</artist>
+    </artists>
+    <genres>
+        <genre>UK R&amp;B</genre>
+        <genre>R&amp;B/Soul</genre>
+        <genre>Pop</genre>
+    </genres>
+    <year>2019</year>
+  </song>
+</songlist>

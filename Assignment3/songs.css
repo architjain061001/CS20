@@ -1,0 +1,62 @@
+songlist:before {
+    content: "My favorite songs";
+    position: fixed;
+    top: 25px;
+    left: 10%;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+songlist {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 80px;
+}
+
+song {
+    display: grid;
+    grid-template-columns: 0.4fr 0.25fr 0.25fr 0.1fr;
+    width: 80%;
+    margin: 0px auto;
+    padding: 20px;
+    background-color: black;
+    border: 1px solid gray;
+    border-radius: 10px;
+    color: white;
+}
+
+title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+artists {
+    display: flex;
+    align-items: left;
+}
+
+genres {
+    display: flex;
+    align-items: left;
+}
+
+artist {
+    font-style: italic;
+    justify-content: center;
+    align-items: center;
+    padding-right: 10px;
+}
+
+genre {
+    font-weight: bold;
+    padding: 0 5px;
+}
+
+year {
+    position: relative;
+    font-size: 18px;
+    float: right;
+}
