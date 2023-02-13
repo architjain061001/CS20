@@ -47,9 +47,10 @@
                 document.write("Hotdogs: " + hotdogs + "<br>" + 
                             "Fries: " + fries + "<br>" +
                             "Sodas: " + sodas + "<br><br>" +
-                            "Subtotal: $" + finSubtotal + "<br>");
+                            "Subtotal: $" + (finSubtotal+finDiscount) + "<br>");
                 if (discount > 0) {
-                    document.write("Discount: $" + finDiscount + "<br><br>");
+                    document.write("Discount: $" + finDiscount + "<br>");
+                    document.write("Subtotal after discount: $" + finSubtotal + "<br><br>");
                 }
                 document.write("Tax: $" + finTax + "<br><br>");
                 document.write("<b>Total: $" + finTotal + "</b>");
