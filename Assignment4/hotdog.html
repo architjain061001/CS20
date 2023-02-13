@@ -38,16 +38,46 @@
                 
 
                 /* convert to two decimal places */
-                var finSubtotal = Math.floor(subtotal * 100) / 100;
-                var finDiscount = Math.floor(discount * 100) / 100;
-                var finTax = Math.floor(tax * 100) / 100;
-                var finTotal = Math.floor(total * 100) / 100;
+                var roundSubtotal = (parseInt(subtotal * 100));
+                var roundDiscount = (parseInt(discount * 100));
+                var roundTax = (parseInt(tax * 100));
+                var roundTotal = (parseInt(total * 100));
+                
+                var length = 4;
+
+                var finSubtotalafterDis = (roundSubtotal+roundDiscount).toString();
+                length = finSubtotalafterDis.length;
+                finSubtotalafterDis = finSubtotalafterDis.substr(0, length - 2) + "." 
+                            + finSubtotalafterDis.substr(length - 2);
+
+                var finSubtotal = roundSubtotal.toString();
+                length = finSubtotal.length;
+                finSubtotal = finSubtotal.substr(0, length - 2) + "." 
+                            + finSubtotal.substr(length - 2);
+
+                var finDiscount = roundDiscount.toString();
+                length = finDiscount.length;
+                finDiscount = finDiscount.substr(0, length - 2) + "." 
+                            + finDiscount.substr(length - 2);
+
+                var finTax = roundTax.toString();
+                length = finTax.length;
+                finTax = finTax.substr(0, length - 2) + "." 
+                            + finTax.substr(length - 2);
+                if (finTax.length <= 3) {
+                    finTax = "0" + finTax;
+                }
+
+                var finTotal = roundTotal.toString();
+                length = finTotal.length;
+                finTotal = finTotal.substr(0, length - 2) + "." 
+                            + finTotal.substr(length - 2);
                 
                 /* Generate summary of results */
                 document.write("Hotdogs: " + hotdogs + "<br>" + 
                             "Fries: " + fries + "<br>" +
                             "Sodas: " + sodas + "<br><br>" +
-                            "Subtotal: $" + (finSubtotal+finDiscount) + "<br>");
+                            "Subtotal: $" + finSubtotalafterDis + "<br>");
                 if (discount > 0) {
                     document.write("Discount: $" + finDiscount + "<br>");
                     document.write("Subtotal after discount: $" + finSubtotal + "<br><br>");
