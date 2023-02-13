@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>Joe's Hotdogs</title>
+        <style>
+            .result {
+                text-align: left;
+                margin: 50px auto;
+                width: fit-content;
+                padding: 20px 50px;
+                border: 4px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="result">
+            <h1>Joe's Hotdog Stand</h1>
+            <h2>Order Summary</h2>
+            <script>
+                /* Using prompts to get the order and store the values in 
+                variables. */
+                var hotdogs = parseInt(prompt("Select the number of hotdogs"));
+                var fries = parseInt(prompt("Select the number of fries?"));
+                var drinks = parseInt(prompt("Select the number of drinks?"));
+
+                /* Calculate subtotal using formula from spec */
+                var subtotal = (hotdogs * 4) + (fries * 3.50) + (drinks * 1.75);
+                
+                /* Calculate discount if subtotal >= 20 */
+                var discount = 0;
+                if (subtotal >= 20) {
+                    discount = subtotal * 0.10;
+                    subtotal = subtotal - discount;
+                }
+                
+                /* Calculate tax and total */
+                var tax = subtotal * 0.0625;
+                var total = subtotal + tax;
+                
+
+                /* convert to two decimal places */
+                var finSubtotal = Math.floor(subtotal * 100) / 100;
+                var finDiscount = Math.floor(discount * 100) / 100;
+                var finTax = Math.floor(tax * 100) / 100;
+                var finTotal = Math.floor(total * 100) / 100;
+                
+                /* Generate summary of results */
+                document.write("Hotdogs: " + hotdogs + "<br>" + 
+                            "Fries: " + fries + "<br>" +
+                            "Drinks: " + drinks + "<br><br>" +
+                            "Subtotal: $" + finSubtotal + "<br>");
+                if (discount > 0) {
+                    document.write("Discount: $" + finDiscount + "<br><br>");
+                }
+                document.write("Tax: $" + finTax + "<br><br>");
+                document.write("<b>Total: $" + finTotal + "</b>");
+            </script>
+        </div>
+    </body>
+</html>
