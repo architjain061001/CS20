@@ -10,7 +10,7 @@ $(document).ready(function() {
     ****************************************************************/
     
     // Initialize game variables
-    var grid = ["", "", "", "", "", "", "", "", ""];
+    var grid;
     var winner = null;
     var turn = "X";
     const gameOverMessage = document.querySelector('.gameover');
@@ -64,7 +64,7 @@ $(document).ready(function() {
       $(".cell").text("");
 
       // Initialize grid to be empty 
-      grid = ["", "", "", "", "", "", "", "", ""];
+      grid = new Array(9).fill("");
     
       // Create a variable for the winner and set it to null
       winner = null;
