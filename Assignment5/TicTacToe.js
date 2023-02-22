@@ -1,5 +1,10 @@
+/****************************************************************
+*      TicTacToe.js 
+*      This file includes the javascript code for TicTacToe.js
+*      Comp 20
+****************************************************************/
+
 $(document).ready(function() {
-    
     /****************************************************************
     * This section creates elements of the game using javascript    *
     ****************************************************************/
@@ -122,5 +127,4 @@ $(document).ready(function() {
       gameOverMessage.classList.remove('hidden');
       $(".cell").hide();
     }
-
 });
