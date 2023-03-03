@@ -1,0 +1,53 @@
+body {
+	padding: 0px 30px;
+}
+
+.userInfo label {
+	display: inline-block;
+	width: 90px;
+	text-align: right;
+}
+
+.userInfo input[type="text"], select {
+	width: 150px;
+}
+
+.userInfo.address {
+	display: none;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+th, td {
+	border: 1.5px solid black;
+	padding: 7px;
+	text-align: center;
+}
+
+th {
+	background-color: #D3D3D3;
+}
+
+.selectQuantity select {
+	width: 50px;
+}
+
+.itemName, .cost {
+	text-align: left;
+}
+
+.totalCost input[type="text"] {
+	width: 50px;
+	margin-left: 3px;
+}
+
+.totalSection {
+	text-align: right;
+}
+
+.totalSection label {
+	font-weight: bold;
+}
