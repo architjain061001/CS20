@@ -39,10 +39,6 @@
 			return "<td class = '" + className + "'>" + content + "</td>";
 		}
 
-		/**************************************************************
-		 * 	The functions below update the costs and submits form
-		 * ***********************************************************/
-
 		// Function to update the total cost and the subtotal, tax, and total fields
 		function updateCost() {
 			var subtotal = 0;
@@ -85,7 +81,7 @@
 			var street = document.getElementsByName("street")[0].value;
 			var city = document.getElementsByName("city")[0].value;
 			var deliverySelected = document.querySelector('input[name="p_or_d"]:checked').value === 'delivery';
-			var quantities;
+			var quantities = 0;
 			for (let i = 0; i < menuItems.length; i++) {
 				const quantity = parseInt(document.querySelector(`select[name="quan${i}"]`).value);
 				quantities += quantity;
@@ -135,9 +131,9 @@
 			orderWindow.document.write("<p><strong>Name:</strong> " + fname + " " + lname + "</p>");
 			orderWindow.document.write("<p><strong>Phone:</strong> " + phone + "</p>");
 			if (!deliverySelected) {
-				orderWindow.document.write("<p><strong>Please pick up your order at the restaurant in 15 minutes." + "</p>");
+				orderWindow.document.write("<p><strong>Please pick up your order at the restaurant in 15 minutes.</strong>" + "</p>");
 			} else {
-				orderWindow.document.write("<p><strong>Your order will be delivered to " + street + ", " + city + " in 45 minutes." + "</p>");
+				orderWindow.document.write("<p><strong>Your order will be delivered to " + street + ", " + city + " in 45 minutes. </strong>" + "</p>");
 			}
 
 			// Display items ordered
@@ -156,7 +152,6 @@
 			orderWindow.document.write("<p><strong>Subtotal:</strong> $" + subtotal.toFixed(2) + "</p>");
 			orderWindow.document.write("<p><strong>Tax:</strong> $" + tax.toFixed(2) + "</p>");
 			orderWindow.document.write("<p><strong>Total:</strong> $" + total.toFixed(2) + "</p>");
-
 		}
 	</script>
 
@@ -201,6 +196,7 @@
 				}
 				document.writeln(s);
 				
+				// Update the cost when there is a change in quantity
 				document.querySelectorAll("select[name^='quan']").forEach(select => {
 					select.addEventListener('change', updateCost);
 					
