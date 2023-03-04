@@ -1,0 +1,185 @@
+<html>
+  <head>
+    <title>Joe's Hotdogs Order Form</title>
+    <style>
+        /* Styling for the form */
+        form {
+          margin: 50px auto;
+          width: 50%;
+          text-align: center;
+          font-family: Arial, sans-serif;
+        }
+      
+        label {
+          display: block;
+          margin-bottom: 20px;
+          text-align: left;
+          font-size: 18px;
+          font-weight: bold;
+        }
+      
+        select {
+          font-size: 16px;
+          padding: 5px;
+          border-radius: 5px;
+          border: 1px solid #ccc;
+          margin-left: 10px;
+        }
+      
+        input[type="submit"] {
+          display: inline-block;
+          margin-top: 20px;
+          padding: 10px 20px;
+          background-color: #4CAF50;
+          color: white;
+          font-size: 18px;
+          font-weight: bold;
+          border-radius: 5px;
+          border: none;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+        }
+      
+        input[type="submit"]:hover {
+          background-color: #3e8e41;
+        }
+      
+        #result {
+          display: none;  
+          text-align: center;
+          margin: 50px auto;
+          width: fit-content;
+          padding: 20px 50px;
+          border: 4px solid #4CAF50;
+          background-color: #f2f2f2;
+          font-size: 18px;
+          font-weight: bold;
+          border-radius: 5px;
+        }
+    </style>  
+  </head>
+  <body>
+    <form>
+      <label>
+        Hotdogs:
+        <select id="hotdogs">
+          <option value="0">Select Quantity</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="10">10</option>
+          <option value="15">15</option>
+          <option value="20">20</option>
+        </select>
+        <span>$4 each</span>
+      </label>
+      <label>
+        Fries:
+        <select id="fries">
+          <option value="0">Select Quantity</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="10">10</option>
+          <option value="15">15</option>
+          <option value="20">20</option>
+        </select>
+        <span>$3.50 each</span>
+      </label>
+      <label>
+        Sodas:
+        <select id="sodas">
+          <option value="0">Select Quantity</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="10">10</option>
+          <option value="15">15</option>
+          <option value="20">20</option>
+        </select>
+        <span>$1.75 each</span>
+      </label>
+      <input type="submit" value="Submit Order">
+    </form>
+    <div id="result"></div>
+    <script>
+        // Define the available quantities and their respective prices
+        const quantities = [
+            {value: 1, label: '1'},
+            {value: 2, label: '2'},
+            {value: 3, label: '3'},
+            {value: 4, label: '4'},
+            {value: 5, label: '5'},
+            {value: 10, label: '10'},
+            {value: 15, label: '15'},
+            {value: 20, label: '20'}
+        ];
+
+        const hotdogPrice = 4;
+        const friesPrice = 3.5;
+        const sodaPrice = 1.75;
+
+        // Get references to the form elements
+        const hotdogSelect = document.getElementById('hotdogs');
+        const friesSelect = document.getElementById('fries');
+        const sodaSelect = document.getElementById('sodas');
+        const calculateButton = document.querySelector('input[type="submit"]');
+        const resultDiv = document.getElementById('result');
+
+        // Add the quantity options to each select element
+        for (let i = 0; i < quantities.length; i++) {
+        const option = document.createElement('option');
+        option.value = quantities[i].value;
+        option.text = quantities[i].label;
+        hotdogSelect.add(option.cloneNode(true));
+        friesSelect.add(option.cloneNode(true));
+        sodaSelect.add(option.cloneNode(true));
+        }
+
+        // Handle the calculate button click
+        calculateButton.addEventListener('click', () => {
+            event.preventDefault();
+
+            // Get the selected quantities
+            const hotdogQty = parseInt(hotdogSelect.value);
+            const friesQty = parseInt(friesSelect.value);
+            const sodaQty = parseInt(sodaSelect.value);
+
+            if(hotdogQty + friesQty + sodaQty == 0) {
+                alert("Please select at least one item to order.");
+                return;
+            }
+
+            resultDiv.style.display = 'block';
+            // Calculate the subtotal, discount, tax, and total
+            const subtotal = (hotdogQty * hotdogPrice) + (friesQty * friesPrice) + (sodaQty * sodaPrice);
+            let discount = 0;
+            if (subtotal >= 20) {
+                discount = subtotal * 0.10;
+            }
+            const tax = subtotal * 0.0625;
+            const total = subtotal - discount + tax;
+
+            // Display the results
+            if (subtotal > 0) {
+                resultDiv.innerHTML = `
+                <h2>Order Summary</h2>
+                <p>Hotdogs: ${hotdogQty} x $${hotdogPrice.toFixed(2)}</p>
+                <p>Fries: ${friesQty} x $${friesPrice.toFixed(2)}</p>
+                <p>Sodas: ${sodaQty} x $${sodaPrice.toFixed(2)}</p>
+                <p>Subtotal: $${subtotal.toFixed(2)}</p>
+                ${discount > 0 ? `<p>Discount: $${discount.toFixed(2)}</p>` : ''}
+                <p>Tax: $${tax.toFixed(2)}</p>
+                <p>Total: $${total.toFixed(2)}</p>
+                `;
+            }
+        });
+    </script>
+</body>
+</html>
