@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jump Textboxes</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+        }
+        
+        input {
+            font-size: 20px;
+            padding: 10px;
+            width: 300px;
+            margin: 10px;
+            border-radius: 15px;
+            border: 2px solid gray;
+        }
+        
+        button {
+            font-size: 20px;
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 10px;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+        }
+    </style>    
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+<body>
+	<input type="text" id="leftBox">
+	<button id="jumpButton">JUMP &gt;</button>
+	<input type="text" id="rightBox">
+	
+	<script>
+	$(document).ready(function() {
+		$("#jumpButton").click(function() {
+			if ($("#jumpButton").text() == "JUMP >") {
+				$("#rightBox").val($("#leftBox").val());
+				$("#leftBox").val("");
+				$("#jumpButton").text("< JUMP");
+			} else {
+				$("#leftBox").val($("#rightBox").val());
+				$("#rightBox").val("");
+				$("#jumpButton").text("JUMP >");
+			}
+		});
+	});
+	</script>
+</body>
+</html>

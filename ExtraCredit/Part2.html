@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Checkboxes</title>
+	<style>
+		body {
+            display: block;
+            margin: 30px;
+            justify-content: center;
+            align-items: center;
+        }
+        label {
+			display: block;
+			margin: 10px 0;
+		}
+	</style>
+</head>
+<body>
+	<h1>Checkboxes</h1>
+	<label>
+		<input type="checkbox" id="check-all"> Check All
+	</label>
+	<label>
+		<input type="checkbox" class="other-checkbox">
+		First
+	</label>
+	<label>
+		<input type="checkbox" class="other-checkbox">
+		Second
+	</label>
+	<label>
+		<input type="checkbox" class="other-checkbox">
+		Third
+	</label>
+	<label>
+		<input type="checkbox" class="other-checkbox">
+		Fourth
+	</label>
+	<label>
+		<input type="checkbox" class="other-checkbox">
+		Fifth
+	</label>
+<script>
+	// Get the Check All checkbox and the other checkboxes
+	const checkAll = document.getElementById('check-all');
+	const otherCheckboxes = document.querySelectorAll('.other-checkbox');
+
+	// Add a change event listener to the Check All checkbox
+	checkAll.addEventListener('change', function() {
+		// If the Check All checkbox is checked
+		if (checkAll.checked) {
+			// Check all other checkboxes
+			otherCheckboxes.forEach(function(checkbox) {
+				checkbox.checked = true;
+			});
+			// Change the label of the Check All checkbox to "Uncheck All"
+			document.getElementById('check-all').nextSibling.textContent = "Uncheck All";
+		} else {
+			// Uncheck all other checkboxes
+			otherCheckboxes.forEach(function(checkbox) {
+				checkbox.checked = false;
+			});
+			// Change the label of the Check All checkbox to "Check All"
+			document.getElementById('check-all').nextSibling.textContent = "Check All";
+		}
+	});
+
+	// Add a change event listener to the other checkboxes
+	otherCheckboxes.forEach(function(checkbox) {
+		checkbox.addEventListener('change', function() {
+			// If any other checkbox is unchecked, uncheck the Check All checkbox
+			if (!checkbox.checked) {
+				checkAll.checked = false;
+				document.getElementById('check-all').nextSibling.textContent = "Check All";
+			}
+			// If all other checkboxes are checked, check the Check All checkbox
+			if (document.querySelectorAll('.other-checkbox:checked').length === otherCheckboxes.length) {
+				checkAll.checked = true;
+				document.getElementById('check-all').nextSibling.textContent = "Uncheck All";
+			}
+		});
+	});
+</script>
+</body>
+</html>
