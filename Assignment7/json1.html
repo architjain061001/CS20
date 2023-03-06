@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>JSON Song List</title>
+    <style>
+		body {
+			margin: 20px;
+		}
+	</style>
+  </head>
+  <body>
+    <h1>Song List</h1>
+    <div id="song-list"></div>
+
+    <script>
+        const songs = {
+            "songs": [
+                {
+                    "title": "What You Know Bout Love",
+                    "artists": ["Pop Smoke"],
+                    "genres": ["Rhythm and blues"],
+                    "year": 2020
+                },
+                {
+                    "title": "YOSEMITE",
+                    "artists": ["Travis Scott", "NAV", "Gunna"],
+                    "genres": ["Hip-Hop/Rap"],
+                    "year": 2018
+                },
+                {
+                    "title": "Often",
+                    "artists": ["The Weeknd"],
+                    "genres": ["R&B/Soul"],
+                    "year": 2015
+                },
+                {
+                    "title": "SAD!",
+                    "artists": ["XXXTentacion"],
+                    "genres": ["Emo rap", "Alternative R&B", "Pop"],
+                    "year": 2018
+                },
+                {
+                    "title": "No Guidance",
+                    "artists": ["Chris Brown", "Drake"],
+                    "genres": ["R&B/Soul"],
+                    "year": 2019
+                },
+                {
+                    "title": "Rockstar",
+                    "artists": ["Post Malone"],
+                    "genres": ["Trap music", "Cloud rap", "Hip-Hop/Rap"],
+                    "year": 2018
+                },
+                {
+                    "title": "Hymn for the Weekend",
+                    "artists": ["Coldplay"],
+                    "genres": ["Alternative/Indie"],
+                    "year": 2015
+                },
+                {
+                    "title": "Life's a Mess",
+                    "artists": ["Juice WRLD", "Halsey"],
+                    "genres": ["Alternative/Indie", "Hip-Hop/Rap"],
+                    "year": 2020
+                },
+                {
+                    "title": "Ransom",
+                    "artists": ["Juice WRLD", "Lil Tecca"],
+                    "genres": ["Hip-Hop/Rap"],
+                    "year": 2019
+                },
+                {
+                    "title": "Love Me Again",
+                    "artists": ["John Newman"],
+                    "genres": ["UK R&B", "R&B/Soul", "Pop"],
+                    "year": 2019
+                },
+                {
+                    "title": "Circles",
+                    "artists": ["Post Malone"],
+                    "genres": ["Pop", "Electropop"],
+                    "year": 2019
+                },
+                {
+                    "title": "Stay",
+                    "artists": ["Post Malone", "The Kid Laroi"],
+                    "genres": ["Pop", "Alternative/Indie"],
+                    "year": 2021
+                },
+                {
+                    "title": "Blinding Lights",
+                    "artists": ["The Weeknd"],
+                    "genres": ["Synth-pop", "Dance-pop"],
+                    "year": 2019
+                },
+                {
+                    "title": "Good Days",
+                    "artists": ["SZA"],
+                    "genres": ["R&B", "Soul"],
+                    "year": 2020
+                },
+                {
+                    "title": "Don't Start Now",
+                    "artists": ["Dua Lipa"],
+                    "genres": ["Disco-pop", "Dance-pop"],
+                    "year": 2019
+                },
+                {
+                    "title": "Watermelon Sugar",
+                    "artists": ["Harry Styles"],
+                    "genres": ["Pop", "Funk-pop"],
+                    "year": 2020
+                }  
+            ]
+        }
+        
+        const songListElement = document.getElementById("song-list");
+        songListElement.innerText = JSON.stringify(songs, null, 2);
+    
+    </script>
+    </body>
+</html>
+
+    
