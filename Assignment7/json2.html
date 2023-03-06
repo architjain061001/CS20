@@ -1,9 +1,14 @@
+<!-- This is a HTML document that displays a table of songs and allows the user 
+to filter the songs by genre. The data for the songs is stored in a JSON file 
+called "songs.json". -->
+
 <!DOCTYPE html>
 <html>
 <head>
 	<title>JSON Song List Serialized</title>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <style>
+        /* Styling for the table */
         body {
             margin: 0 5%;
         }
@@ -31,7 +36,7 @@
         tr:hover {
             background-color: #f5f5f5;
         }
-        /* Style the filter button */
+        
         button[type="button"] {
             background-color: #4CAF50;
             color: white;
@@ -41,12 +46,10 @@
             cursor: pointer;
         }
     
-        /* Change the color of the filter button on hover */
         button[type="button"]:hover {
             background-color: #3e8e41;
         }
     
-        /* Style the select element */
         select {
             background-color: #f2f2f2;
             border: none;
@@ -59,6 +62,7 @@
 <body>
 	<h1>Song List</h1>
 
+    <!-- Form to filter songs by genre -->
     <form>
         <label for="genre-select">Select a Genre:</label>
         <select id="genre-select">
@@ -67,6 +71,7 @@
         <button type="button" onclick="filterByGenre()">Filter</button>
     </form>
 
+    <!-- Table to display song data -->
     <table>
         <thead>
           <tr>
@@ -80,6 +85,7 @@
         </tbody>
       </table>
 
+      <!-- JavaScript code to fetch song data from JSON file and filter the table by genre -->
       <script>
         let songData;
         let genres = new Set();
@@ -96,7 +102,8 @@
                 // Loop through the songs array and add each song to the table
                 songData.songs.forEach(song => {
                     const row = document.createElement("tr");
-    
+                    
+                    // Create table cells for each piece of song data
                     const titleCell = document.createElement("td");
                     titleCell.textContent = song.title;
                     row.appendChild(titleCell);
@@ -142,7 +149,8 @@
                 songData.songs.forEach(song => {
                     if (selectedGenre === "" || song.genres.includes(selectedGenre)) {
                         const row = document.createElement("tr");
-    
+                        
+                         // Create table cells for each piece of filtered song data
                         const titleCell = document.createElement("td");
                         titleCell.textContent = song.title;
                         row.appendChild(titleCell);
@@ -164,7 +172,6 @@
                 });
             }
     </script>
-    
 </body>
 </html>
 
