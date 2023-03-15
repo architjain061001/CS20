@@ -1,0 +1,528 @@
+[
+    {
+        "name": "Alewife",
+        "lat": 42.395428,
+        "lng": -71.142483,
+        "lines": [
+            "Red"
+        ]
+    },
+    {
+        "name": "Andrew",
+        "lat": 42.330154,
+        "lng": -71.057655,
+        "lines": [
+            "Red"
+        ]
+    },
+    {
+        "name": "Ashmont",
+        "lat": 42.284652,
+        "lng": -71.064488,
+        "lines": [
+            "Red"
+        ]
+    },
+    {
+        "name": "Braintree",
+        "lat": 42.2078543,
+        "lng": -71.0011385,
+        "lines": [
+            "Red"
+        ]
+    },
+    {
+        "name": "Central",
+        "lat": 42.365486,
+        "lng": -71.103802,
+        "lines": [
+            "Red"
+        ]
+    },
+    {
+        "name": "Charles/MGH",
+        "lat": 42.361166,
+        "lng": -71.070628,
+        "lines": [
+            "Red"
+        ]
+    },
+    {
+        "name": "Davis",
+        "lat": 42.39674,
+        "lng": -71.121815,
+        "lines": [
+            "Red"
+        ]
+    },
+    {
+        "name": "Downtown Crossing",
+        "lat": 42.355518,
+        "lng": -71.060225,
+        "lines": [
+            "Red",
+            "Orange"
+        ]
+    },
+    {
+        "name": "Fields Corner",
+        "lat": 42.300093,
+        "lng": -71.061667,
+        "lines": [
+            "Red"
+        ]
+    },
+    {
+        "name": "Forest Hills",
+        "lat": 42.300523,
+        "lng": -71.113686,
+        "lines": [
+            "Orange",
+            "Red"
+        ]
+    },
+    {
+        "name": "Harvard",
+        "lat": 42.373362,
+        "lng": -71.118956,
+        "lines": [
+            "Red"
+        ]
+    },
+    {
+        "name": "JFK/UMass",
+        "lat": 42.320685,
+        "lng": -71.052391,
+        "lines": [
+            "Red"
+        ]
+    },
+    {
+        "name": "Kendall/MIT",
+        "lat": 42.36249079,
+        "lng": -71.08617653,
+        "lines": [
+            "Red"
+        ]
+    },
+    {
+        "name": "North Quincy",
+        "lat": 42.275275,
+        "lng": -71.029583,
+        "lines": [
+            "Red"
+        ]
+    },
+    {
+        "name": "Park Street",
+        "lat": 42.35639457,
+        "lng": -71.0624242,
+        "lines": [
+            "Red",
+            "Green"
+        ]
+    },
+    {
+        "name": "Porter",
+        "lat": 42.3884,
+        "lng": -71.11914899999999,
+        "lines": [
+            "Red"
+        ]
+    },
+    {
+        "name": "Quincy Adams",
+        "lat": 42.233391,
+        "lng": -71.007153,
+        "lines": [
+            "Red"
+        ]
+    },
+    {
+        "name": "Quincy Center",
+        "lat": 42.251809,
+        "lng": -71.005409,
+        "lines": [
+            "Red"
+        ]
+    },
+    {
+        "name": "Roxbury Crossing",
+        "lat": 42.331397,
+        "lng": -71.095451,
+        "lines": [
+            "Orange"
+        ]
+    },
+    {
+        "name": "Ruggles",
+        "lat": 42.336377,
+        "lng": -71.088961,
+        "lines": [
+            "Orange"
+        ]
+    },
+    {
+        "name": "Shawmut",
+        "lat": 42.29312583,
+        "lng": -71.06573796000001,
+        "lines": [
+            "Red"
+        ]
+    },
+    {
+        "name": "South Station",
+        "lat": 42.352271,
+        "lng": -71.05524200000001,
+        "lines": [
+            "Red",
+            "Silver"
+        ]
+    },
+    {
+        "name": "Savin Hill",
+        "lat": 42.31129,
+        "lng": -71.053331,
+        "lines": [
+            "Red"
+        ]
+    },
+    {
+        "name": "State Street",
+        "lat": 42.358978,
+        "lng": -71.057598,
+        "lines": [
+            "Blue",
+            "Orange"
+        ]
+    },
+    {
+        "name": "Stony Brook",
+        "lat": 42.317062,
+        "lng": -71.104248,
+        "lines": [
+            "Orange"
+        ]
+    },
+    {
+        "name": "Sullivan",
+        "lat": 42.383975,
+        "lng": -71.076994,
+        "lines": [
+            "Orange"
+        ]
+    },
+    {
+        "name": "Tufts Medical Center",
+        "lat": 42.349662,
+        "lng": -71.063917,
+        "lines": [
+            "Orange"
+        ]
+    },
+    {
+        "name": "Wellington",
+        "lat": 42.40237,
+        "lng": -71.077082,
+        "lines": [
+            "Orange"
+        ]
+    },
+    {
+        "name": "Wollaston",
+        "lat": 42.2665139,
+        "lng": -71.0203369,
+        "lines": [
+            "Red"
+        ]
+    },
+    {
+        "name": "Lechmere",
+        "lat": 42.370772,
+        "lng": -71.076536,
+        "lines": [
+            "Green"
+        ]
+    },
+    {
+        "name": "Science Park",
+        "lat": 42.366666,
+        "lng": -71.067605,
+        "lines": [
+            "Green"
+        ]
+    },
+    {
+        "name": "North Station",
+        "lat": 42.365577,
+        "lng": -71.06129,
+        "lines": [
+            "Green"
+        ]
+    },
+    {
+        "name": "Haymarket",
+        "lat": 42.363021,
+        "lng": -71.05829,
+        "lines": [
+            "Green"
+        ]
+    },
+    {
+        "name": "Government Center",
+        "lat": 42.359705,
+        "lng": -71.059215,
+        "lines": [
+            "Green"
+        ]
+    },
+    {
+        "name": "Boylston",
+        "lat": 42.352312,
+        "lng": -71.064248,
+        "lines": [
+            "Green"
+        ]
+    },
+    {
+        "name": "Arlington",
+        "lat": 42.351902,
+        "lng": -71.070893,
+        "lines": [
+            "Green"
+        ]
+    },
+    {
+        "name": "Copley",
+        "lat": 42.349974,
+        "lng": -71.077447,
+        "lines": [
+            "Green"
+        ]
+    },
+    {
+        "name": "Hynes Convention Center",
+        "lat": 42.347888,
+        "lng": -71.087903,
+        "lines": [
+            "Green"
+        ]
+    },
+    {
+        "name": "Kenmore",
+        "lat": 42.348949,
+        "lng": -71.095169,
+        "lines": [
+            "Green"
+        ]
+    },
+    {
+        "name": "Blandford Street",
+        "lat": 42.349293,
+        "lng": -71.100258,
+        "lines": [
+            "Green"
+        ]
+    },
+    {
+        "name": "Boston University East",
+        "lat": 42.350142,
+        "lng": -71.105147,
+        "lines": [
+            "Green"
+        ]
+    },
+    {
+        "name": "Boston University Central",
+        "lat": 42.350941,
+        "lng": -71.115109,
+        "lines": [
+            "Green"
+        ]
+    },
+    {
+        "name": "Boston University West",
+        "lat": 42.350082,
+        "lng": -71.125149,
+        "lines": [
+            "Green"
+        ]
+    },
+    {
+        "name": "Saint Paul Street",
+        "lat": 42.343062,
+        "lng": -71.116467,
+        "lines": [
+            "Green"
+        ]
+    },
+    {
+        "name": "Pleasant Street",
+        "lat": 42.340082,
+        "lng": -71.13456,
+        "lines": [
+            "Green"
+        ]
+    },
+    {
+        "name": "Chelsea",
+        "lat": 42.395983,
+        "lng": -71.034323,
+        "lines": [
+            "Silver"
+        ]
+    },
+    {
+        "name": "Airport",
+        "lat": 42.365577,
+        "lng": -71.020282,
+        "lines": [
+            "Silver"
+        ]
+    },
+    {
+        "name": "Aquarium",
+        "lat": 42.359784,
+        "lng": -71.051652,
+        "lines": [
+            "Silver"
+        ]
+    },
+    {
+        "name": "Courthouse",
+        "lat": 42.352529,
+        "lng": -71.047766,
+        "lines": [
+            "Silver"
+        ]
+    },
+    {
+        "name": "World Trade Center",
+        "lat": 42.348716,
+        "lng": -71.042746,
+        "lines": [
+            "Silver"
+        ]
+    },
+    {
+        "name": "Silver Line Way",
+        "lat": 42.344875,
+        "lng": -71.036557,
+        "lines": [
+            "Silver"
+        ]
+    },
+    {
+        "name": "Andrew",
+        "lat": 42.330154,
+        "lng": -71.057655,
+        "lines": [
+            "Silver"
+        ]
+    },
+    {
+        "name": "Broadway",
+        "lat": 42.342622,
+        "lng": -71.056967,
+        "lines": [
+            "Silver"
+        ]
+    },
+    {
+        "name": "East Berkeley Street",
+        "lat": 42.342496,
+        "lng": -71.065925,
+        "lines": [
+            "Silver"
+        ]
+    },
+    {
+        "name": "Wonderland",
+        "lat": 42.41342,
+        "lng": -70.991648,
+        "lines": [
+            "Blue"
+        ]
+    },
+    {
+        "name": "Revere Beach",
+        "lat": 42.40784254,
+        "lng": -70.99253321,
+        "lines": [
+            "Blue"
+        ]
+    },
+    {
+        "name": "Beachmont",
+        "lat": 42.39754234,
+        "lng": -70.99231944,
+        "lines": [
+            "Blue"
+        ]
+    },
+    {
+        "name": "Suffolk Downs",
+        "lat": 42.39050067,
+        "lng": -70.99712259,
+        "lines": [
+            "Blue"
+        ]
+    },
+    {
+        "name": "Orient Heights",
+        "lat": 42.386867,
+        "lng": -71.00473599999999,
+        "lines": [
+            "Blue"
+        ]
+    },
+    {
+        "name": "Wood Island",
+        "lat": 42.3796403,
+        "lng": -71.02286539000001,
+        "lines": [
+            "Blue"
+        ]
+    },
+    {
+        "name": "Airport",
+        "lat": 42.374262,
+        "lng": -71.030395,
+        "lines": [
+            "Blue"
+        ]
+    },
+    {
+        "name": "Maverick",
+        "lat": 42.36911856,
+        "lng": -71.03952958000001,
+        "lines": [
+            "Blue"
+        ]
+    },
+    {
+        "name": "Aquarium",
+        "lat": 42.359784,
+        "lng": -71.051652,
+        "lines": [
+            "Blue"
+        ]
+    },
+    {
+        "name": "State",
+        "lat": 42.358978,
+        "lng": -71.057598,
+        "lines": [
+            "Blue",
+            "Orange"
+        ]
+    },
+    {
+        "name": "Bowdoin",
+        "lat": 42.361365,
+        "lng": -71.062037,
+        "lines": [
+            "Blue"
+        ]
+    }    
+]

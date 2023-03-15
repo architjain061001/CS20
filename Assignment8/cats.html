@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cat Facts</title>
+    <link rel="stylesheet" href="cats.css">
+</head>
+
+<body style="text-align: center;">
+    <h1>Cat Facts</h1>
+    <div id="cat-facts"></div>
+    <button onclick="getFacts()">Generate Random Fact</button>
+    <script>
+        function getFacts() {
+            fetch("https://cat-fact.herokuapp.com/facts")
+                .then(response => response.json())
+                .then(data => {
+                    var facts = data.filter(fact => fact.type === "cat"); // Filter out non-cat facts
+                    var fact = facts[Math.floor(Math.random() * facts.length)]; // Select random fact
+                    var factList = document.createElement("ul");
+                    var factItem = document.createElement("li");
+                    factItem.textContent = fact.text;
+                    factList.appendChild(factItem);
+                    document.getElementById("cat-facts").innerHTML = "";
+                    document.getElementById("cat-facts").appendChild(factList);
+                })
+                .catch(error => console.error(error));
+        }
+        getFacts();
+    </script>
+</body>
+
+</html>
