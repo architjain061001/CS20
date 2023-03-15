@@ -39,3 +39,10 @@ ul {
 li {
     margin: 10px 0;
 }
+
+#api-details {
+    width: 50%;
+    font-size: 16px;
+    text-align: left;
+    margin: 20px;
+}

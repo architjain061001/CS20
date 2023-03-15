@@ -10,6 +10,21 @@
     <h1>Cat Facts</h1>
     <div id="cat-facts"></div>
     <button onclick="getFacts()">Generate Random Fact</button>
+    <p id="api-details">
+        The API I selected is the Cat Facts API, which provides random facts about cats. 
+        I found it on the website https://cat-fact.herokuapp.com/. <br/> <br/>
+
+        For the API request, I used the basic endpoint "https://cat-fact.herokuapp.com/facts", 
+        which returns a JSON object containing an array of facts. I also added a filter option 
+        to only include facts with the type "cat", since some of the facts returned are not 
+        actually about cats. <br/> <br/>
+
+        Two applications where this API would be helpful are: <br/> <br/>
+
+        Educational websites or apps about cats, where users can learn interesting facts about these animals. <br/> <br/>
+        Entertainment websites or apps, where users can get a quick laugh or amusement from reading random cat facts. <br/> <br/>
+
+    </p>
     <script>
         function getFacts() {
             fetch("https://cat-fact.herokuapp.com/facts")
