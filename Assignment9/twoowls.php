@@ -37,7 +37,7 @@
             closingTime.setHours(3, 0, 0); // Set closing time to 3am
 
             // Check if the current time is during open hours (8pm to 3am)
-            if (currentTime.getHours() >= 16 || currentTime.getHours() < 3) {
+            if (currentTime.getHours() >= 20 || currentTime.getHours() < 3) {
                 // Check if there's at least 30 minutes until closing time
                 if (currentTime.getHours() > 2 && currentTime.getHours() < 3 && currentTime.getMinutes() > 30) {
                     // Order was submitted during open hours and at least 30 minutes prior to closing
