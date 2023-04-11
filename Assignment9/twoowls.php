@@ -66,6 +66,7 @@
         <tr>
           <th>Item</th>
           <th>Price</th>
+          <th>Preview</th>
           <th>Quantity</th>
         </tr>
         <?php
@@ -90,6 +91,7 @@
             echo "<tr>";
             echo "<td>" . $row["name"] . "</td>";
             echo "<td>$" . $row["cost"] . "</td>";
+            echo "<td><img src='" . $row["image_url"] . "' alt='" . $row["name"] . "'></td>";
             echo "<td><select name='" . $row["id"] . "'>";
             for($i = 0; $i <= 10; $i++) {
               echo "<option value='" . $i . "'>" . $i . "</option>";
