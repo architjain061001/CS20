@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Stock Lookup</title>
+  </head>
+  <body>
+    <form method="POST" action="/lookup">
+      <label>
+        <input type="radio" name="searchType" value="ticker" checked> Stock Ticker
+      </label>
+      <label>
+        <input type="radio" name="searchType" value="company"> Company Name
+      </label>
+      <br>
+      <input type="text" name="searchInput" placeholder="Enter ticker symbol or company name">
+      <br>
+      <button type="submit">Lookup</button>
+    </form>
+  </body>
+</html>

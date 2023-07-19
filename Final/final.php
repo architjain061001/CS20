@@ -3,7 +3,7 @@
 
 <head>
     <title>User Information Form</title>
-    <link rel="stylesheet" href="final.css">
+    <link rel="stylesheet" href="home.css">
 </head>
 
 <body>

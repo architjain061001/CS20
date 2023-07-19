@@ -1,0 +1,122 @@
+/* Global styles */
+body {
+    background-color: black;
+    color: white;
+    padding: 0;
+    margin: 0;
+    font-family: Garamond, serif;
+    font-size: 16px;
+}
+
+/* Style for the header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    background-color: beige;
+    border-bottom: 2px solid darkgreen;
+    height: 70px;
+}
+
+/* Style for the logo */
+.logo img {
+    height: 110px;
+    position: absolute;
+    left: 10px;
+    top: -12px;
+}
+
+/* Style for the navigation */
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333333;
+    font-weight: 500;
+    padding: 10px 15px;
+    font-size: 20px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #333333;
+    color: #FFFFFF;
+}
+
+nav ul li.login a {
+    background-color: darkgreen;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+nav ul li.login a:hover {
+    background-color: #333333;
+    color: #FFFFFF;
+}
+
+/* Style for the main content */
+main {
+    background-color: black;
+    padding: 50px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Style for the footer */
+footer {
+    background-color: #333333;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Style for the centered navigation */
+nav ul.centered {
+    justify-content: center;
+}
+
+nav ul.centered li {
+    margin: 0 10px;
+}
+
+/* Style for the main slogan */
+.slogan {
+    text-align: center;
+    color: #999999;
+}
+
+.slogan h1 {
+    font-size: 50px;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: Garamond, serif;
+}
+
+.slogan p {
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    font-family: Garamond, serif;
+    font-style: italic;
+}
+
+/* Style for the hero image section */
+.hero-image {
+    background-image: url('hero.jpeg');
+    height: 600px;
+    padding: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover
+}
